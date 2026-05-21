@@ -9,7 +9,7 @@ import { VisualizerProvider } from './components/VisualizerContext'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/app" element={<Dashboard />} />

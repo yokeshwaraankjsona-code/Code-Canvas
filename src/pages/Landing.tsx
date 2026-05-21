@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { Button } from '../components/ui/Button'
 import MainLayout from '../layouts/MainLayout'
 
@@ -15,8 +16,8 @@ export default function Landing() {
             <h1 className="text-2xl font-semibold text-white">CodeCanvas</h1>
             <nav className="space-x-4">
               <a href="#features" className="text-sm text-gray-300">Features</a>
-              <a href="/visualizer" className="text-sm text-gray-300">Visualizer</a>
-              <a href="/app" className="text-sm text-gray-300">Open App</a>
+              <Link to="/visualizer" className="text-sm text-gray-300">Visualizer</Link>
+              <Link to="/app" className="text-sm text-gray-300">Open App</Link>
             </nav>
           </header>
 
@@ -33,8 +34,8 @@ export default function Landing() {
                 Build algorithms with draggable blocks, watch execution step-by-step, and explore complexities — all in a futuristic, interactive workspace.
               </p>
               <div className="mt-8 flex gap-4">
-                <Button as="a" href="/visualizer">Algorithm Visualizer</Button>
-                <Button as="a" href="/app">Open Dashboard</Button>
+                <Button as={Link} to="/visualizer">Algorithm Visualizer</Button>
+                <Button as={Link} to="/app">Open Dashboard</Button>
               </div>
             </section>
 
