@@ -11,9 +11,6 @@ export default function Topbar() {
           <input className="bg-transparent outline-none text-sm text-gray-300" placeholder="Search blocks, algorithms..." />
         </div>
       </div>
-      <div className="flex items-center gap-3">
-        <div className="text-sm text-gray-300">Dark</div>
-      </div>
     </header>
   )
 }
